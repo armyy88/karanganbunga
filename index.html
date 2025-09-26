@@ -3,184 +3,119 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Toko Bunga Jakarta Barat – LayMotion</title>
+  <title>Toko Karangan Bunga Jakarta Barat</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      color: #333;
-    }
+    body { font-family: 'Segoe UI', sans-serif; color: #333; }
     .hero {
-      background: url('https://source.unsplash.com/1600x900/?flowers') center/cover no-repeat;
-      position: relative;
-      height: 80vh;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background: url('https://images.pexels.com/photos/931167/pexels-photo-931167.jpeg') center/cover no-repeat;
+      height: 85vh; position: relative;
+      display: flex; align-items: center; justify-content: center;
     }
     .hero::after {
-      content: "";
-      position: absolute;
-      inset: 0;
-      background-color: rgba(0,0,0,0.4);
+      content:""; position:absolute; inset:0; background:rgba(0,0,0,0.4);
     }
     .hero .content {
-      position: relative;
-      color: white;
-      text-align: center;
-      z-index: 1;
+      position: relative; color: white; text-align: center; z-index: 1;
     }
-    .category-card img {
-      height: 200px;
-      object-fit: cover;
-    }
-    .feature-icon {
-      font-size: 2rem;
-      color: #d63384;
-    }
-    .testimonial {
-      background-color: #f8f9fa;
-      padding: 2rem 1rem;
-      border-radius: 8px;
-    }
-    footer {
-      background-color: #343a40;
-      color: white;
-      padding: 2rem 1rem;
-    }
-    a.btn-primary {
-      background-color: #d63384;
-      border-color: #d63384;
-    }
+    .category-card img { height: 230px; object-fit: cover; }
+    footer { background:#343a40; color:white; padding: 2rem 1rem; }
+    a.btn-primary { background:#d63384; border-color:#d63384; }
   </style>
 </head>
 <body>
 
-  <!-- Header / Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
-    <div class="container">
-      <a class="navbar-brand fw-bold" href="#">LayMotion Bunga</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-        data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
-          <li class="nav-item"><a class="nav-link" href="#promo">Promo</a></li>
-          <li class="nav-item"><a class="nav-link" href="#testi">Testimoni</a></li>
-          <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
-        </ul>
-      </div>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Karangan Bunga Barat</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#produk">Produk</a></li>
+        <li class="nav-item"><a class="nav-link" href="#testi">Testimoni</a></li>
+        <li class="nav-item"><a class="nav-link" href="#kontak">Kontak</a></li>
+      </ul>
     </div>
-  </nav>
+  </div>
+</nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="content container">
-      <h1 class="display-4">Karangan Bunga & Hadiah Terbaik di Jakarta Barat</h1>
-      <p class="lead">Pesan sekarang, kirim hari ini. Gratis ongkir area Jakarta Barat.</p>
-      <a href="https://wa.me/6281234567890" class="btn btn-lg btn-primary">Pesan Sekarang</a>
-    </div>
-  </section>
+<!-- Hero -->
+<section class="hero">
+  <div class="content container">
+    <h1 class="display-4">Karangan Bunga Terbaik di Jakarta Barat</h1>
+    <p class="lead">Pesan hari ini, kirim hari ini. Gratis ongkir area Jakbar.</p>
+    <a href="https://wa.me/6281234567890" class="btn btn-lg btn-primary">Pesan via WhatsApp</a>
+  </div>
+</section>
 
-  <!-- Kategori Produk -->
-  <section id="produk" class="container py-5">
-    <h2 class="text-center mb-4">Kategori Produk Kami</h2>
-    <div class="row g-4">
-      <div class="col-md-4">
-        <div class="card category-card">
-          <img src="https://source.unsplash.com/800x600/?flower-arrangement" class="card-img-top" alt="Bunga Papan">
-          <div class="card-body text-center">
-            <h5 class="card-title">Bunga Papan</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card category-card">
-          <img src="https://source.unsplash.com/800x600/?bouquet" class="card-img-top" alt="Bouquet">
-          <div class="card-body text-center">
-            <h5 class="card-title">Bouquet</h5>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="card category-card">
-          <img src="https://source.unsplash.com/800x600/?standing-flower" class="card-img-top" alt="Standing Flower">
-          <div class="card-body text-center">
-            <h5 class="card-title">Standing Flower</h5>
-          </div>
-        </div>
-      </div>
-      <!-- Tambah kategori lain jika perlu -->
-    </div>
-  </section>
-
-  <!-- Fitur / Keunggulan -->
-  <section class="container py-5">
-    <h2 class="text-center mb-4">Mengapa Memilih Kami?</h2>
-    <div class="row text-center g-4">
-      <div class="col-md-4">
-        <div><i class="feature-icon bi bi-truck"></i></div>
-        <h5>Pengiriman Cepat</h5>
-        <p>Dalam kota Jakarta Barat, kirim di hari yang sama.</p>
-      </div>
-      <div class="col-md-4">
-        <div><i class="feature-icon bi bi-shield-check"></i></div>
-        <h5>Garansi Kualitas</h5>
-        <p>Bunga segar, perawatan terbaik, komitmen kepuasan.</p>
-      </div>
-      <div class="col-md-4">
-        <div><i class="feature-icon bi bi-geo-alt"></i></div>
-        <h5>Lokasi & Jangkauan</h5>
-        <p>Beroperasi di Jakarta Barat & sekitarnya.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Testimoni Pelanggan -->
-  <section id="testi" class="container py-5">
-    <h2 class="text-center mb-4">Apa Kata Pelanggan</h2>
-    <div class="row justify-content-center">
-      <div class="col-md-8">
-        <div class="testimonial">
-          <p>“Karangan bunganya sangat indah dan dikirim tepat waktu. Pelayanan ramah dan kualitas terjamin!”</p>
-          <p><strong>– Maria, Jakarta Barat</strong></p>
+<!-- Produk -->
+<section id="produk" class="container py-5">
+  <h2 class="text-center mb-4">Kategori Karangan Bunga</h2>
+  <div class="row g-4">
+    <div class="col-md-4">
+      <div class="card category-card">
+        <img src="https://images.pexels.com/photos/613882/pexels-photo-613882.jpeg" class="card-img-top" alt="Bunga Papan">
+        <div class="card-body text-center">
+          <h5 class="card-title">Bunga Papan</h5>
+          <p>Ucapan selamat, pernikahan, grand opening.</p>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Promo / Call-to-Action -->
-  <section id="promo" class="py-5 text-white" style="background-color: #d63384;">
-    <div class="container text-center">
-      <h2>Promo Spesial Hari Ini</h2>
-      <p>Dapatkan diskon 10% + gratis ongkir khusus area Jakarta Barat.</p>
-      <a href="https://wa.me/6281234567890" class="btn btn-light">Gunakan Sekarang</a>
-    </div>
-  </section>
-
-  <!-- Kontak & Footer -->
-  <footer id="kontak">
-    <div class="container py-4">
-      <div class="row">
-        <div class="col-md-6">
-          <h5>Hubungi Kami</h5>
-          <p>Telp / WhatsApp: <a href="https://wa.me/6281234567890" class="text-white">0812-3456-7890</a></p>
-          <p>Email: <a href="mailto:info@tokobungabarat.com" class="text-white">info@tokobungabarat.com</a></p>
-        </div>
-        <div class="col-md-6 text-md-end">
-          <h5>Sosial Media</h5>
-          <a href="#" class="text-white me-2">Instagram</a>
-          <a href="#" class="text-white me-2">Facebook</a>
+    <div class="col-md-4">
+      <div class="card category-card">
+        <img src="https://images.pexels.com/photos/931166/pexels-photo-931166.jpeg" class="card-img-top" alt="Bouquet">
+        <div class="card-body text-center">
+          <h5 class="card-title">Bouquet</h5>
+          <p>Buket bunga segar untuk hadiah spesial.</p>
         </div>
       </div>
-      <hr class="border-light">
-      <p class="text-center mb-0">&copy; 2025 LayMotion Bunga. All Rights Reserved.</p>
     </div>
-  </footer>
+    <div class="col-md-4">
+      <div class="card category-card">
+        <img src="https://images.pexels.com/photos/4466147/pexels-photo-4466147.jpeg" class="card-img-top" alt="Duka Cita">
+        <div class="card-body text-center">
+          <h5 class="card-title">Karangan Duka Cita</h5>
+          <p>Ungkapan belasungkawa penuh hormat.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Testimoni -->
+<section id="testi" class="container py-5">
+  <h2 class="text-center mb-4">Testimoni Pelanggan</h2>
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <div class="bg-light p-4 rounded">
+        <p>“Bunga papan pesanan saya dikirim tepat waktu dan hasilnya sangat indah! Recommended banget.”</p>
+        <p><strong>- Andi, Jakarta Barat</strong></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer id="kontak">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h5>Kontak Kami</h5>
+        <p>Telp/WA: <a href="https://wa.me/6281234567890" class="text-white">0812-3456-7890</a></p>
+        <p>Email: info@tokobungajakarta.com</p>
+      </div>
+      <div class="col-md-6 text-md-end">
+        <h5>Alamat</h5>
+        <p>Jakarta Barat, Indonesia</p>
+      </div>
+    </div>
+    <hr class="border-light">
+    <p class="text-center">&copy; 2025 Toko Karangan Bunga Jakarta Barat</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
